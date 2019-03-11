@@ -1,0 +1,25 @@
+while True :
+    import random
+    tahminSayi = 0
+    print ("Merhaba adin nedir ?")
+    adim = input()
+    sayi = random.randint( 1 , 10)
+    print("Tamam " +adim+ ",1 ile 10 arasinda bir sayi tutuyorum.")
+    while tahminSayi < 3 :
+            print("Hadi tahmin et.")
+            tahmin = input()
+            tahmin = int(tahmin)
+            tahminSayi = tahminSayi + 1
+            if tahmin < sayi :
+               print("tahminin kücük.")
+            if tahmin > sayi :
+               print("tahminin büyük.")
+            if tahmin == sayi :
+                break
+    if tahmin == sayi :
+           tahminSayi = str(tahminSayi)
+           print("İyi iş , " + adim + " ! " + tahminSayi + " tahminde buldun.")
+    if tahmin != sayi :
+           sayi = str(sayi)
+           print("Üzgünüm , Benim sayim " + sayi )
+  
