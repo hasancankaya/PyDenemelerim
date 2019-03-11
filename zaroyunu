@@ -1,0 +1,27 @@
+print("player1 adinizi giriniz.")
+player1 = input()
+print("player2 adinizi giriniz.")
+player2 = input()
+while True:
+    import random
+    b=input(player1 +" zar at   entere bas")  
+    pl1point = random.randint(1,6)  
+    pl1point2 =random.randint(1,6)
+    print(player1)
+    print(pl1point ,pl1point2)
+    input(player2 +" zar at   entere bas")
+    pl2point =random.randint(1,6)
+    pl2point2=random.randint(1,6)
+    print(player2)
+    print( pl2point , pl2point2)
+    total1 = (pl1point +pl1point2)
+    total2 = (pl2point + pl2point2)
+    if total1 > total2 :
+        print(player1  + " kazandı.")
+    elif total1 == total2 :
+        print("berabere")
+    else :
+        print(player2 + " kazandı.")
+    if b == ("q"):
+             break
+
