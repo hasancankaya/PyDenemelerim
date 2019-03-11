@@ -1,0 +1,35 @@
+taskagitmakas = ["tas","kagit","makas"]
+import random
+tas = taskagitmakas[0]
+kagit = taskagitmakas[1]
+makas = taskagitmakas[2]
+while True :
+    print("TAS mi ? KAGİT mi ? MAKAS mi?")
+    gir = input()
+    a=random.choice(taskagitmakas)
+    print("rakip " + a + " dedi.")
+    if gir == ("q"):
+        break
+    elif gir == tas:
+        if tas == a :
+            print("Berabere.")
+        elif kagit == a :
+            print("Yenildin.")
+        elif makas == a :
+            print("Yendin.")
+    elif gir == kagit:
+        if kagit == a :
+            print("Berabere.")
+        elif tas == a :
+            print("Yendin.")
+        elif makas == a :
+            print("Yenildin.")
+    elif gir ==makas:
+        if makas == a :
+            print("Berabere.")
+        elif tas == a :
+            print("Yenildin.")
+        elif kagit == a :
+            print("Yendin.")
+    
+    
