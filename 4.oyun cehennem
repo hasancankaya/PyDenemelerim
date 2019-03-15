@@ -1,0 +1,95 @@
+import random
+import time
+def tanim(): 
+    print("Merhaba savasci,köyüne olanlar icin üzgünüm,sen kurtulan tek kisisin.")
+    print("Cehennem kacagi Daremus," )
+    print("Seninki gibi bircok köyü yakip , bulduklarinin kanini emdi.")
+    print("Baskentin sokaklarinda bile kurumus cesetler dolu.")
+    print("O korkak kralin nerde oldugundan kimsenin haberi yok.")
+    print("Halkin tek ümidi kadim savascininsa,")
+    print("Kani Daremusun dişlerinden sizarken merhamet icin yalvariyordu.")
+    print("Tüm bunlara ragmen umudunu yitirmeyenler var.")
+    print("Alimler Bulak magarasinda  bir cözümün bulundugunu düsünüyorlar.")
+    print("Senden ricam ilk isikla cikip onu bulman ve Daremus'un sonunu getirmen.")
+    print("Şimdi düşün...")
+    print()
+def magarasec():
+          magara= " "
+          while magara != "1" and  magara !="2" :
+              print("Hepimiz sana minnetteriz evlat ,magaradan girdin iki yön var. ")
+              print(" hangisinden gireceksin? (1 or 2 )?")
+              magara =input()
+          return magara
+def magaradeneme (denenen) :
+    print( "Sectigin yolda ilerliyorsun hersey  cok karanlik önünü zor görüyorsun.")
+    print("İlerlediğin her adimda sicakligin arttigini hissediyorsun.")
+    print()
+    time.sleep(3)
+    kilic = random.randint(1,2)
+    if denenen == str(kilic):
+        print("Sicakligin kaynagi belli oluyor,  cehennem geciti.")
+        print("Gecitten tek kolu olan bir ölü ,kilici sana uzatiyor.")
+        print("Bu büyükbabanin anlattigi cehennem koruyucusu olmali,")
+        print("Buraya ait olani geri gönder diyor. ")
+        print("Kilici tutar tutmaz kontrol senden gidiyor.")
+        print("Kendine geldigindeyse her yer kan icinde ve gücün kalmamis ,bayiliyorsun.")
+        print("Gözlerini actiginda halkin kahramanisin ve kadim savasci ilan edilmissin.")
+        print("Kral saklandigi delikten cikmis ve senin üzerinden prim yapiyor.")
+        print("Kilici birdaha hic görmüyorsun.")
+        print("SON")
+        print(" ")
+        print("""
+                                     |\|
+                                     |||
+                                     |||
+                                     |||
+                                     |||
+                                     |||
+                                     |||
+                                  ~-[{o}]-~
+                                     |/|
+                                     |/|
+                                     `0'
+                                     """)
+
+    else :
+        print("İlerliyorsun fakat icinde bir huzursuzluk var .")
+        print("Sanki birileri daha var senden baska karanligin icinde,")
+        print("Durmadan etrafini kolacan ediyorsun.")
+        print("Garip sesler duymaya basliyorsun kosturmali gülmeli,")
+        print("Sanki cocuk kahkahalari gibi ama nasil olur magaranin derinliklerinde,")
+        print("Kosuyorsun durmadan sonra cikmak istiyorsun, ")
+        print("Fakat magaranin cikisi ne yönde hicbir fikrin yok ve sesler artiyor.")
+        print("Kisa süre sonra nerede olduguna dair bile bir fikrin yok,deliriyorsun.")
+        print("Sadece koşuyorsun ve kahkaha atiyorsun.")
+        print("Sen kosarkende insanlik kanlari cekilmis,")
+        print("etleri yenmis kemik torbalarina dönüyor.")
+        print("SON")
+        print("                                                                            ")
+tekrar=  "evet"
+while tekrar =="evet" or playAgain== "e" :
+    tanim()
+    karar = input("Sabah oldu kararin nedir, var misin yok musun ?(varim,yokum)") 
+    if  karar == "yokum" :
+        print(" ")
+        print("Teklifi reddedip çikiyorsun ve kaninin cekilecegi günü korkuyla bekliyorsun.")
+        print("Bir sabah ,gece ölüleri soymaya giderken ,")
+        print("Daremus'un avinin bitmedigini farkedemiyorsun.")
+        print("Seni yakaliyor kanini emerken birden duruyor,")
+        print("Kanindan eğer sen kilici bulsaydin neler olacakti hepsini görüyor.")
+        print("En önemliside kilicin verilmesi icin acilan geciti ve koruyucuyu.")
+        print("Daremus magaraya gidip,")
+        print("iki dünya arasindaki tek kollu bilge koruyucuyu öldürüyor ve aradaki duvar kalkıyor.")
+        print("Cehennem insan irkiyla besleniyor.")
+        print("Tüm bunlar olurken sen boynunda bir tasma")
+        print("Daremus'un köpegi olarak izlemeye mahkum birakiliyorsun.")
+        print("SON")
+                
+ 
+        print("Tekrar oynamak ister misiniz?(evet,hayir)")
+        playAgain = input()
+    else:
+        secilen = magarasec()
+        magaradeneme(secilen)
+        print("Tekrar oynamak ister misiniz?(evet,hayir)")
+        tekrar = input()
